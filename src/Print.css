@@ -2,13 +2,20 @@
   display: none;
 }
 
+.fullWidth {
+  min-width: 100%
+}
+
 @media print {
   .root {
-    visibility: visible; /* visible element even nested in the hidden one */
+    visibility: visible;
+    /* visible element even nested in the hidden one */
   }
+
   .root._main {
     visibility: visible;
   }
+
   ._exclusive {
     display: block;
   }
