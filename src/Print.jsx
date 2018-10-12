@@ -76,7 +76,14 @@ export default class Print extends React.Component {
 	}
 
 	render() {
-		const { children, main, single, exclusive, printOnly } = this.props;
+		const {
+			children,
+			main,
+			single,
+			exclusive,
+			printOnly,
+			fullWidth,
+		} = this.props;
 		const { printOffsetLeft, printOffsetTop } = this.state;
 		const main_ = main || single ? s._main : '';
 		const excl_ = exclusive || printOnly ? s._exclusive : '';
